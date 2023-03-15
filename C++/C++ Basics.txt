@@ -1,0 +1,225 @@
+
+	C++
+
+	Developed by Bjarne Stroustup
+
+	C
+	Small Talk
+	Simula67
+
+	Team Development
+===========================================
+
+1978- 1981
+		C  with  Classes
+
+1997 
+
+	C++ 97   --   C Front Compiler 
+	C++ 03
+	C++ 07
+	C++ 11
+	C++ 14
+
+===========================================
+
+C++  Toolchain
+
+C++  Program  ->  C Front(C++ Compiler)  ->  C  Program  ->  C  Compliler -> C Toolchain
+
+Calc.CPP   ->                    ->  Calc.C   ->                     ->  Calc.Asm  ->             ->  Calc.Obj ->                 ->  Calc.Exe 
+
+=============================================================================================
+
+Object Oriented Concepts 
+
+		Class	
+				Characteristics => Data Members, Class Variables
+				Behaviors 		=> Member Functions 
+				
+		Object / Instance / Variable
+
+		// Encapsulation / Data Binding
+		// Abstraction
+		
+		Constructor - Birth
+		
+		Destructor - Death
+		
+		Inheritance -- Reusability
+
+		Access Specifier 
+			- Public
+			- Private
+			- Protected
+
+		Reference
+
+		Function Calling Techniques in C++
+		
+		Copy Constructor
+		
+		this pointer
+
+		inline
+		
+============================================================		
+
+		Static
+
+		Constant
+
+		Polymorphism
+			- RunTime (Late Binding)
+							- Virtual
+							- Pure Virtual *** 
+							- Virtual Destructor *** 2Hrs * 2
+
+			- CompileTime (Early Binding)
+							- Function Overlaoding
+							- Operator Overlaoding ***	2Hrs * 3
+							
+		Friend
+		
+		Template ***  2Hrs * 3
+
+		Exception Handeling in C++ *** 2Hrs * 1
+
+================================================================================================
+
+	Structure of C++ Program - Simple
+							 - Class & Object Based
+					 
+	Keywords
+
+	Datatypes
+
+	Variables
+
+	Operators
+
+				::  Scope Resolution Operator
+				
+				>>   Extraction Operator  (cin)      //// scanf
+		
+				<<   Insertion Operator (cout)    //// printf
+				
+				new     //  malloc calloc realloc  (Dynamic Memory Allocation)
+
+				delete  // free  (Deallocation Function )
+
+================================================================================================
+
+Control Statements
+
+if
+if ... else
+else if ladder
+nested if else
+
+while
+do while
+for
+
+switch
+
+================================================================================================
+
+1)Insiders of class (Member function, Constructor & destructor),
+Can access anything (Data Members as well as Other Member Functions) of class.
+i.e. Access Specifier Limitions are applicable only for Outsiders.
+
+
+2)Constructor & Destructor should be written inside Public access specifier,
+as they are called implicitely by compiler.
+
+
+3)If We don't apply an any access specifier in class then,
+all Characteristics & Member functions of class are considered as Private.
+i.e Default Access specifier Of class in C++ is PRIVATE.
+
+
+4)Synthesized Constructor
+
+=================================================================================================
+
+					C++ Assignment / Case Study
+
+Design a C++ Class For
+
+Student/Customer/Employee/Product
+
+&
+Use or Write Appropriate Characteristics & Behaviours for the same...
+write all type of constructors & destructor for your corresponding class...
+
+write all required functions...
+
+as well as main function with appropriate logic
+
+
+& Upload that Class/Program to your git profiles
+C++ Folder / Repository...
+
+
+
+====================================================================================================
+
+
+class Stud
+{
+		int RNo;
+		char Name[12];
+		char City[8];
+		float Per;
+
+		Stud()
+		{
+			// Code For Default Constructor
+			cout<<"\n Here Student Details Will Be Set to its Default Value inside this Constructor";
+			RNo = 0;
+			Per = 0.0;
+			Name = "";
+			
+			Accept_Details();
+		}
+		
+		void  Accept_Details()
+		{
+			// Code for Accept_Details Member Function
+		}
+
+		void Display_Details()
+		{
+			// Code for Display_Details Member Function
+
+			Name = "Farhan";
+		}
+		
+		float Calculate_Percentage()
+		{
+				// Calculation Of Percentage 
+				
+				return Per;
+		}
+
+		~Stud()
+		{
+			// Code For Def Destructor
+		}
+};
+
+void  Calculate()
+{
+		// Code For Calculate Function
+}
+
+int main()
+{
+		Stud  Obj1;
+		
+		Obj1.Display_Details();
+		
+}
+
+
